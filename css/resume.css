@@ -206,8 +206,8 @@ a:hover, a:focus, a:active {
   display: inline-block;
   overflow: hidden;
   margin: 5px;
-  width: 320px;
-  height: 240px;
+  width: 240px;
+  height: 160px;
 }
 ol,li {
   font-size: 1.1rem;
