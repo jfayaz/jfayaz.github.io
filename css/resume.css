@@ -207,11 +207,18 @@ a:hover, a:focus, a:active {
   width: 240px;
   height: 160px;
 }
+.image-div1{
+  display: inline-block;
+  overflow: hidden;
+  margin: 1px;
+  width: 480px;
+  height: 361px;
+}
 .image-div2{
   display: inline-block;
   overflow: hidden;
   margin: 5px;
-  width: 480px;
+  width: 225px;
   height: 320px;
 }
 ol,li {
