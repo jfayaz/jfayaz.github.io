@@ -222,3 +222,15 @@ ul {
   font-size: 1.1rem;
   font-weight: 250;
 }
+br.work1 {
+  display: block;
+  margin-top:  32px;
+  font-size:2px;
+  line-height: 4px;
+}
+br.work2 {
+  display: block;
+  margin-top:  4px;
+  font-size:2px;
+  line-height: 4px;
+}
