@@ -242,3 +242,8 @@ br.work2 {
   font-size:2px;
   line-height: 4px;
 }
+.rating {
+  padding-left: 2rem;
+  content: "\2605";
+  position: absolute;
+}
