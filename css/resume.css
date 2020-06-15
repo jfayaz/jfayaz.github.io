@@ -247,3 +247,15 @@ br.work2 {
   content: "\2605";
   position: absolute;
 }
+.gallery{
+  margin: 10px 20px;
+}
+.gallery img{
+  transition: 1s;
+  padding: 15px;
+  height: 300px;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
