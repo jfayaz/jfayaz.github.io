@@ -42,6 +42,16 @@ h3 {
   font-size: 1.5rem;
   padding-bottom: 5rem;
 }
+h3.mb-0 {
+  font-size:200%;
+  color:#05246d;
+}
+h3.mb-1 {
+  font-size:200%;
+  color:#05246d;
+  padding-left: 0%;
+}
+
 h3.hobbies {
   font-size: 2rem;
   padding-top: 4rem;
@@ -222,12 +232,29 @@ a:hover, a:focus, a:active {
   width: 225px;
   height: 320px;
 }
+
+ol.workexp {
+  font-size: 1.0rem;
+  font-weight: 250;
+  padding-left: 0%;
+}
+li.workexp {
+  font-size: 1.0rem;
+  font-weight: 250;
+  padding-left: 2%;
+}
 ol,li {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: 250;
 }
+li span {
+  font-weight: bold;
+}
+li div {
+  font-weight: bold;
+}
 ul {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: 250;
 }
 br.work1 {
