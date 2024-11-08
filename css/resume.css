@@ -286,3 +286,13 @@ br.work2 {
   filter: grayscale(100%);
   transform: scale(1.1);
 }
+
+ol.custom-counter {
+  counter-reset: item-counter j1;
+}
+
+/* Style the list items */
+ol.custom-counter li::before {
+  counter-increment: item-counter;
+  content: "j" counter(item-counter) ". ";
+}
