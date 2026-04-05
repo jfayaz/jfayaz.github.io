@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(grep -E \"\\\\.html$\")",
-      "Bash(py --version)"
-    ]
-  }
-}
