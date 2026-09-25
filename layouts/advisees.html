@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Research team and PhD advisees of Dr. Jawad Fayaz at the University of Exeter.">
+    <meta name="description" content="Postgraduate researchers, graduate students, and visitors hosted by Dr. Jawad Fayaz at the University of Exeter.">
     <meta name="author" content="Jawad Fayaz">
 
     <title>Team | Dr. Jawad Fayaz</title>
@@ -20,6 +20,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Main design -->
     <link href="../css/main.css" rel="stylesheet">
+
+    <style>
+      .team-sections { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-bottom: 2rem; }
+      .team-sections a { font-weight: 600; }
+      .team-section + .team-section { margin-top: 3rem; }
+      .team-section h2 { scroll-margin-top: 6rem; }
+      .team-member { margin-bottom: 2rem; }
+      .team-name { color: var(--teal-dark); font-weight: 700; font-size: 1.1rem; }
+      .team-content .student-details { min-width: 0; overflow-wrap: anywhere; }
+      .team-content .student-card img.img.team-photo-full { object-fit: contain !important; object-position: center center !important; }
+      .team-bio { margin: 0; }
+      @media (max-width: 600px) {
+        .team-content .student-card { flex-direction: column; }
+      }
+    </style>
 
   </head>
 
@@ -43,418 +58,440 @@
       <div class="page-body">
     <div class="page-header">
       <h1>Team</h1>
-      <p>PhD Students &amp; Research Advisees</p>
+      <p>Postgraduate Researchers, Graduate Students &amp; Visitors</p>
     </div>
-    <div class="page-content">
-        <div class="education">
-          <h2 class="mb-5" style="color:#003c3c">Team</h2>
-
-          <h3 class="mb-5" style="color:#003c3c">Current</h3>
-
-          <div class="col-md-12" style="margin-top: 50px">
+    <div class="page-content team-content">
+      <nav class="team-sections" aria-label="Team sections">
+        <a href="#postgraduate">Postgraduate</a>
+        <a href="#graduate">Graduate</a>
+        <a href="#visitors">Visitors</a>
+      </nav>
+        <section class="team-section" aria-labelledby="postgraduate">
+          <h2 id="postgraduate">Postgraduate</h2>
+          <article class="team-member">
             <div class="student-card d-flex align-items-top">
-                <div class="student-image" style="margin-right: 15px;">
-                    <img src="../img/Alireza.png" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-                </div>
-                <div class="student-details">
-                    <div style="color: #003c3c;font-weight: bold; font-size: larger;">Alireza Bafti</div>
-                    <div>PhD Student (2026-Present)</div>
-                    <div>Topic : <i>Harnessing Remote Sensing for Automatic Monitoring of Pit Lakes</i> </div>
-                    <div>Exeter Supervisors : Jawad Fayaz and Sareh Rowlands (UoE)</div>
-                    <div>Queensland Supervisors : Neil Mcintyre (UoQ) and Nevenka Bulovic (UoQ)</div>                    
-                    <!-- <div>Currently : Data Management Analyst at UBS Group AG</div> -->
-                </div>
+              <div class="student-image">
+                <img src="../img/Amina.jpeg" alt="Amina Sadia" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Amina Sadia</div>
+                <div>PhD Student (2026 - Present)</div>
+                <div>Affiliation : University of Exeter, UK &amp; University of Queensland, Australia</div>
+                <div>Topic : <i>Harnessing Remote Sensing for Automatic Monitoring of Pit Lakes</i> </div>
+                <div>Exeter Supervisors : Jawad Fayaz and Sareh Rowlands (UoE)</div>
+                <div>Queensland Supervisors : Neil Mcintyre (UoQ) and Nevenka Bulovic (UoQ)</div>
+              </div>
             </div>
-             <div style="margin-top: 5px;">Alireza is a PhD student (dual-degree QUEX program) at the University of Exeter, UK and the University of Queensland, Australia. His research combines GIS programming with advanced deep/machine learning and remote sensing to monitor key hydrological variables, including flooding, drought, soil moisture, and evapotranspiration. His work applies machine learning to develop automated remote sensing approaches for detecting and monitoring pit lakes, supporting improved understanding of their hydrological and chemical dynamics.
-            </div> 
-        </div>
+            <p class="team-bio">Amina's PhD research focuses on using remote sensing and deep learning to automatically detect and monitor pit lakes across Australia. The project develops scalable approaches to map pit lake extent and dynamics over time, and integrates these observations with predictive hydrological models to better understand water-related processes and water quality. The research aims to support more informed mine closure, rehabilitation, and environmental management decisions.</p>
+          </article>
 
-        <div class="col-md-12" style="margin-top: 50px">
+          <article class="team-member">
             <div class="student-card d-flex align-items-top">
-                <div class="student-image" style="margin-right: 15px;">
-                    <img src="../img/Arastun.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-                    
-                </div>
-                <div class="student-details">
-                    <div style="color: #003c3c;font-weight: bold; font-size: larger;">Arastun Mammadli</div>
-                    <div>PhD Student (2026-Present)</div>
-                    <div>Topic : <i>LLM-Based Agentic AI: Foundations, Systems & Applications</i> </div>
-                    <div>Supervisors : Shiqiang Wang (UoE) and Jawad Fayaz</div>
-                    <!-- <div>Currently : Data Management Analyst at UBS Group AG</div> -->
-                </div>
+              <div class="student-image">
+                <img src="../img/Arastun.jpg" alt="Arastun Mammadli" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Arastun Mammadli</div>
+                <div>PhD Student (2026 - Present)</div>
+                <div>Affiliation : University of Exeter, UK</div>
+                <div>Topic : <i>LLM-Based Agentic AI: Foundations, Systems and Applications</i></div>
+                <div>Supervisors : Shiqiang Wang (UoE) and Jawad Fayaz</div>
+              </div>
             </div>
-             <div style="margin-top: 5px;">Arastun is a PhD student in Computer Science at the University of Exeter, UK. His research investigates the theoretical and algorithmic foundations of LLM-based agent systems, with the goal of making such systems more collaborative, reliable, and efficient. This interest carries into his work with the UCL NLP group on agent search, composition, and design, exploring how agents can be discovered and orchestrated at scale.
-            </div> 
-        </div>
+            <p class="team-bio">Arastun is a PhD student in Computer Science at the University of Exeter, UK. His research investigates the theoretical and algorithmic foundations of LLM-based agent systems, with the goal of making such systems more collaborative, reliable, and efficient. This interest carries into his work with the UCL NLP group on agent search, composition, and design, exploring how agents can be discovered and orchestrated at scale.</p>
+          </article>
 
-            <div class="col-md-12" style="margin-top: 50px">
+          <article class="team-member">
             <div class="student-card d-flex align-items-top">
-                <div class="student-image" style="margin-right: 15px;">
-                    <img src="../img/Xiang.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-                </div>
-                <div class="student-details">
-                    <div style="color: #003c3c;font-weight: bold; font-size: larger;">Xiang Geng</div>
-                    <div>PhD Student (2025-Present)</div>
-                    <div>Topic : <i>AI-based Solar Power Forecasting for Sustainable Data Centres</i> </div>
-                    <div>Supervisors : John Panneerselvam (UoE), Lu Liu (UoE), and Jawad Fayaz</div>
-                    <!-- <div>Currently : Data Management Analyst at UBS Group AG</div> -->
-                </div>
+              <div class="student-image">
+                <img src="../img/Xiang.jpg" alt="Xiang Geng" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Xiang Geng</div>
+                <div>PhD Student (2025 - Present)</div>
+                <div>Affiliation : University of Exeter, UK</div>
+                <div>Topic : <i>AI-based Solar Power Forecasting for Sustainable Data Centres</i> </div>
+                <div>Supervisors : John Panneerselvam (UoE), Lu Liu (UoE), and Jawad Fayaz</div>
+              </div>
             </div>
-             <div style="margin-top: 5px;">Xiang is a PhD student in Computer Science at the University of Exeter, UK. His research focuses on developing machine learning models for solar power forecasting, exploring advanced time series and deep learning techniques to improve the reliability and accuracy of predictions. The results aim to enable more efficient and stable operation of renewable-powered data centres.
-            </div> 
-        </div>
+            <p class="team-bio">Xiang is a PhD student in Computer Science at the University of Exeter, UK. His research focuses on developing machine learning models for solar power forecasting, exploring advanced time series and deep learning techniques to improve the reliability and accuracy of predictions. The results aim to enable more efficient and stable operation of renewable-powered data centres.</p>
+          </article>
 
-
-
-            <div class="col-md-12" style="margin-top: 50px">
+          <article class="team-member">
             <div class="student-card d-flex align-items-top">
-                <div class="student-image" style="margin-right: 15px;">
-                    <img src="../img/Frank.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-                </div>
-                <div class="student-details">
-                    <div style="color: #003c3c;font-weight: bold; font-size: larger;">Frank Kpoglu</div>
-                    <div>PhD Student (2025-Present)</div>
-                    <div>Topic : <i>Graph Representation Learning for Early Warning in Evolving Spatio-Temporal Systems</i> </div>
-                    <div>Supervisors : Jawad Fayaz and Edward Keedwall (UoE)</div>
-                    <!-- <div>Currently : Data Management Analyst at UBS Group AG</div> -->
-                </div>
+              <div class="student-image">
+                <img src="../img/Frank.jpg" alt="Frank Kpoglu" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Frank Kpoglu</div>
+                <div>PhD Student (2025 - Present)</div>
+                <div>Affiliation : University of Exeter, UK</div>
+                <div>Topic : <i>Graph Representation Learning for Early Warning in Evolving Spatio-Temporal Systems</i></div>
+                <div>Supervisors : Jawad Fayaz and Edward Keedwall (UoE)</div>
+              </div>
             </div>
-             <div style="margin-top: 5px;">Frank is a PhD student in Computer Science at the University of Exeter, UK. His research focuses on designing novel graph neural network models that can capture complex spatio-temporal dependencies to enable robust early warning systems in domains such as seismic monitoring, water infrastructure, and environmental risk prediction. By integrating uncertainty quantification and adaptive learning, the research aims to advance both the theoretical foundations of graph neural networks and their practical deployment in real-world critical systems.
-            </div> 
-        </div>
+            <p class="team-bio">Frank is a PhD student in Computer Science at the University of Exeter, UK. His research focuses on designing novel graph neural network models that can capture complex spatio-temporal dependencies to enable robust early warning systems in domains such as seismic monitoring, water infrastructure, and environmental risk prediction. By integrating uncertainty quantification and adaptive learning, the research aims to advance both the theoretical foundations of graph neural networks and their practical deployment in real-world critical systems.</p>
+          </article>
 
-        <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Sai.png" alt="Student Name" class="img" style="width: 150px; height: 150px;">
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/free-user.png" alt="Photo placeholder for project data scientists" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">2 x Project Data Scientists (2025 - 2025)</div>
+                <div>Affiliation : University of Exeter &amp; Met Office, UK</div>
+                <div>Topic : <i>Bayesian Machine Learning Framework for Probabilistic Impact-Based Hazard Decision-Making</i></div>
+                <div>Supervisors : Jawad Fayaz, Steven Ramsdale (Met Office), and Andrew Howes (UoE)</div>
+              </div>
             </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Saiphirun Prommijit </div>
-                <div>MSc Student (2026-2027)</div>
+            <p class="team-bio">Two postgraduate Data Scientists worked on the development of a probabilistic simulation environment of vulnerability parameters for training reinforcement-learning-based impact-based decision-making agents for natural hazards. The project explicitly integrated physical susceptibility, socioeconomic vulnerability, community preparedness, and recovery capacity, using Bayesian hierarchical modeling to address uncertainties and enhance decision-making realism. This approach aimed to produce a robust and evidence-based framework that improves proactive risk management and emergency response capabilities.</p>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Radia.jpg" alt="Radia Chowdhury" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Radia Chowdhury</div>
+                <div>KTP Associate (2023 - 2024)</div>
+                <div>Affiliation : Teesside University &amp; CSX Carbon, UK</div>
+                <div>Topic : <i>AI-based Peatland Condition Monitoring for Net-Zero</i></div>
+                <div>Supervisors : Annalisa Occhipinti (TU) and Jawad Fayaz</div>
+              </div>
+            </div>
+            <p class="team-bio">Radia worked as a KTP Associate with Teesside University &amp; CSX Carbon on <a href="https://csxcarbon.com/2023/09/29/csx-teesside-university-start-peatland-restoration-knowledge-transfer-partnership/" target="_blank" rel="noopener noreferrer">AI-based peatland condition monitoring and assessment</a>. Her research focused on developing machine learning models to identify, measure and predict peatland conditions, helping locate degraded areas requiring restoration. The project aimed to support cost-effective restoration decisions, protect peatland carbon stores and improve water quality and biodiversity.</p>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Zainab.jpg" alt="Zainab Amjad" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Zainab Amjad</div>
+                <div>KTP Associate (2022 - 2024)</div>
+                <div>Affiliation : Teesside University &amp; Nicander Ltd, UK</div>
+                <div>Topic : <i>Digital Twinning for Transport Management</i></div>
+                <div>Supervisors : Farzad Rahimian (TU) and Jawad Fayaz</div>
+              </div>
+            </div>
+            <p class="team-bio">Zainab worked as a KTP Associate with Teesside University &amp; Nicander Ltd on <a href="https://research.tees.ac.uk/en/projects/ktp-teesside-university-and-nicander-intelligent-digital-twin-for/" target="_blank" rel="noopener noreferrer">intelligent digital twins for transport infrastructure management</a>. Her research focused on applying data science and AI to intelligent transport systems. The partnership connected academic research with transport software development, alongside Nicander's work on asset and fault management and bus-priority solutions.</p>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Lauren.jpg" alt="Dr. Lauren McMillan" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Dr. Lauren McMillan</div>
+                <div>PhD Student (2021 - 2024)</div>
+                <div>Affiliation : University College London, UK</div>
+                <div>Topic : <i>Artificial Intelligence-Based Decision Support for Water Distribution Systems’ Health Monitoring</i></div>
+                <div>Currently : Lecturer at Northumbria University, UK</div>
+                <div>Supervisors : Liz Varga (UCL) and Jawad Fayaz</div>
+              </div>
+            </div>
+            <p class="team-bio">Lauren completed her PhD in Civil, Environmental, and Geomatic Engineering at University College London (UCL), UK. Her research focused on enhancing the resilience and sustainability of critical infrastructure systems through systems-based, data-driven methods. She developed intelligent, data-driven solutions for each phase of leakage management—anticipation, detection, and restoration—envisioning a self-healing system. These solutions were trained and tested on a dataset of over 2,000 district-metered areas managed by a UK water company. This approach provides a rapid and cost-effective method for identifying potential leaks, offering benefits such as increased infrastructure resilience, optimized repair strategies, and improved consumer confidence, which together promote sustainable demand-side behaviours.</p>
+          </article>
+
+        </section>
+
+        <section class="team-section" aria-labelledby="graduate">
+          <h2 id="graduate">Graduate</h2>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Sai.png" alt="Saiphirun Prommijit" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Saiphirun Prommijit</div>
+                <div>MSc in Computer Science (2026 - 2027)</div>
+                <div>Supervisor : Jawad Fayaz</div>
                 <div>Topic : <i>Earthquake Location and Magnitude Estimation using Bayesian Graph Neural Networks</i></div>
-                <div>Supervisor : Jawad Fayaz</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Sai is a MSc graduate student in Computer Science at the University of Exeter, UK. His research proposes a hybrid deep learning architecture to enhance earthquake early warning systems operating under sparse network conditions. The model integrates a graph neural network with temporal attention mechanisms and a Bayesian neural network output layer to dynamically process variable time-series data. By targeting 
-degraded seismic networks with as few as 3 to 10 time series, his research aims to overcome the computational bottlenecks and spatial errors inherent in traditional earthquake origin locators. 
-        </div>
-    </div>
+          </article>
 
-            <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Dharan.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Dharan Teja Vipparla</div>
-                <div>MSc Student (2026-2027)</div>
-                <div>Topic : <i>Physics-Informed Diffusion Models for Precipitation Nowcasting</i></div>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Dharan.jpg" alt="Dharan Teja Vipparla" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Dharan Teja Vipparla</div>
+                <div>MSc in Generative Artificial Intelligence (2026 - 2027)</div>
                 <div>Supervisors : Jawad Fayaz and Andrew Creswick (Met Office)</div>
+                <div>Topic : <i>Physics-Informed Diffusion Models for Precipitation Nowcasting</i></div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Dharan Teja Vipparla is a MSc graduate student in Generative Artificial Intelligence at the University of Exeter, UK. His research proposes a semi-Lagrangian advection scheme which produces a fast physical estimate of the future rainfall field, and a conditional residual diffusion model then learns only the growth, decay, and fine-scale detail that advection misses, using the Met Office one-kilometre radar composite. The model will be evaluated against optical-flow extrapolation and a leading generative baseline, with skill stratified by storm speed and lead time to test when a physical first guess most improves diffusion-based nowcasts. 
-        </div>
-    </div>
+          </article>
 
-
-            <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Robin.JPG" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Robin Isaac</div>
-                <div>MSc Student (2026-2027)</div>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Robin.JPG" alt="Robin Isaac" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Robin Isaac</div>
+                <div>MSc in Computer Science (2026 - 2027)</div>
+                <div>Supervisor : Jawad Fayaz</div>
                 <div>Topic : <i>Data-Driven Spatial Earthquake Early Warning System Using Graph Neural Networks</i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Arraby.jpg" alt="Arraby Senthitselvan" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Arraby Senthitselvan</div>
+                <div>MSc in Computer Science (2026 - 2027)</div>
                 <div>Supervisor : Jawad Fayaz</div>
-            </div>
-        </div>
-        <div style="margin-top: 5px;">Robin is a MSc graduate student in Computer Science at the University of Exeter, UK. His research is focused on developing a graph neural network-based prediction model within the HEWFERS earthquake early warning framework. The main aim of the research is improving the spatial prediction of seismic station relationships through graph-based learning and contributing to the development of a more advanced model for earthquake early warning systems. 
-        </div>
-    </div>
-
-
-            <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Arraby.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Arraby Senthitselvan</div>
-                <div>MSc Student (2026-2027)</div>
                 <div>Topic : <i>A Hybrid Boosted Machine Learning Framework for Fraud Detection in Financial Transactions with Imbalanced Classes</i></div>
-                <div>Supervisor : Jawad Fayaz</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Arraby is a MSc graduate student in Computer Science at the University of Exeter, UK. Her research aims to develop an adaptable yet robust and reliable framework for fraud detection amongst financial transactions whilst also maintaining computational efficiency and a degree of transparency. By addressing gaps and key limitations in current detection frameworks such as inability to handle concept drift, severe class imbalances, generalisation issues and a lack of transparency, her proposed framework will be suitable for use amongst real-world scenarios. 
-        </div>
-    </div>
+          </article>
 
-      <h3 class="mb-5" style="color:#003c3c;margin-top: 80px">Past
-      </h3>
-
-        <div class="col-md-12">
-          <div class="student-card d-flex align-items-top">
-              <div class="student-image" style="margin-right: 15px;">
-                  <img src="../img/Lauren.jpg" alt="martin Name" class="img" style="width: 150px; height: 150px;">
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Oliver.jpeg" alt="Oliver Morris" class="img" width="150" height="150">
               </div>
               <div class="student-details">
-                  <div style="color: #003c3c;font-weight: bold;font-size: larger;">Dr. Lauren McMillan</div>
-                  <div>PhD Student (2021-2024)</div>
-                  <div>Topic : <i>Artificial Intelligence–Enabled Self-Healing Infrastructure Systems</i></div>
-                  <div>Currently : Lecturer at Northumbria University, UK</div>
-                  <div>Supervisors : Liz Varga (UCL) and Jawad Fayaz</div>
-              </div>
-          </div>
-          <div style="margin-top: 5px;">Lauren completed her PhD in Civil, Environmental, and Geomatic Engineering at University College London (UCL), UK. Her research focused on enhancing the resilience and sustainability of critical infrastructure systems through systems-based, data-driven methods. She developed intelligent, data-driven solutions for each phase of leakage management—anticipation, detection, and restoration—envisioning a self-healing system.
-            These solutions were trained and tested on a dataset of over 2,000 district-metered areas managed by a UK water company. This approach provides a rapid and cost-effective method for identifying potential leaks, offering benefits such as increased infrastructure resilience, optimized repair strategies, and improved consumer confidence, which together promote sustainable demand-side behaviours.</div>
-        </div>
-
-        
-        <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/free-user.png" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;"></div>
-                <div>2 x Project Data Scientist (2025-2025)</div>
-                <div>Topic : <i>Bayesian Machine Learning Framework for Probabilistic Hazard Decision-Making</i></div>
-                <div>Supervisors : Jawad Fayaz, Steven Ramsdale (Met Office), Andrew Howes (UoE), and Helen Roberts (Met Office)</div>
-            </div>
-        </div>
-        <div style="margin-top: 5px;">Two postgraduate Data Scientists worked on the development of a probabilistic simulation environment of vulnerability parameters for training reinforcement-learning-based impact-based decision-making agents for natural hazards. The project explicitly integrated physical susceptibility, socioeconomic vulnerability, community preparedness, and recovery capacity, using Bayesian hierarchical modeling to address uncertainties and enhance decision-making realism. This approach aimed to produce a robust and evidence-based framework that improves proactive risk management and emergency response capabilities. 
-        </div>
-    </div>
-
-        <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Oliver.jpeg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Oliver Morris</div>
-                <div>MSci Student (2025-2026)</div>
+                <div class="team-name">Oliver Morris</div>
+                <div>MSci in Computer Science (2025 - 2026)</div>
+                <div>Supervisor : Jawad Fayaz</div>
                 <div>Topic : <i>Graph Neural Networks for Earthquake Early Warning Systems</i></div>
-                <div>Supervisor : Jawad Fayaz</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Oliver completed his MSci in Computer Science at the University of Exeter, UK. His research explored the use of graph neural networks for enhancing earthquake early warning systems. His research modelled the spatial relationships between the seismic stations to predict the shaking intensity field at surrounding stations based on the initial recordings from the first-hit stations. 
-        </div>
-    </div>
+          </article>
 
-    <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/William.JPG" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">William Luong</div>
-                <div>MSci Student (2025-2026)</div>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/William.JPG" alt="William Luong" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">William Luong</div>
+                <div>MSci in Computer Science (2025 - 2026)</div>
+                <div>Supervisor : Jawad Fayaz</div>
                 <div>Topic : <i>Impact-Based Decision Support for Floods Using Deep Reinforcement Learning</i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Alfie.jpg" alt="Alfie Wright" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Alfie Wright</div>
+                <div>MSc in Data Science and Artificial Intelligence (2025 - 2025)</div>
                 <div>Supervisor : Jawad Fayaz</div>
-            </div>
-        </div>
-        <div style="margin-top: 5px;">William completed his MSc in Computer Science at the University of Exeter, UK. His research focused on developing an impact-based decision support agent for floods, trained within a probabilistic simulation environment. The environment captured how physical, socioeconomic, preparedness, and recovery factors interact to determine flood impacts. The aim was to support decision-makers during floods and help minimise overall damage. 
-        </div>
-    </div>
-    
-      <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Alfie.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-            </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Alfie Wright</div>
-                <div>MSc Student (2025-2025)</div>
                 <div>Topic : <i>Generative Modelling for Simulating Earthquake Ground Motions Spectra using Process-Informed Artificial Neural Networks</i></div>
-                <div>Supervisor : Jawad Fayaz</div>
-                <div>Currently : Risk Analyst at Lloyds Banking Group</div>
+                <div>Currently at : Risk Analyst at Lloyds Banking Group</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Alfie completed his MSc in Data Science and Artificial Intelligence at the University of Exeter, UK. His research focused on developing process-informed artificial-neural-networks-based generative models to simulate response spectra of earthquake ground motions. By incorporating key seismic features such as earthquake magnitude, epicentral distance, and site's soil shear-wave velocity, his work aimed to generate realistic ground motions that could enhance earthquake early warning systems and seismic risk assessment. 
-        </div>
-    </div>
+          </article>
 
-
-    <div class="col-md-12" style="margin-top: 50px">
-      <div class="student-card d-flex align-items-top">
-          <div class="student-image" style="margin-right: 15px;">
-              <img src="../img/Yu.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-          </div>
-          <div class="student-details">
-              <div style="color: #003c3c;font-weight: bold;font-size: larger;">Yu Weng</div>
-              <div>MSc Student (2025-2025)</div>
-              <div>Topic : <i>Graph Neural Network-Based Decision Support System for Management of Water Distribution Systems</i></div>
-              <div>Supervisor : Jawad Fayaz</div>
-          </div>
-      </div>
-      <div style="margin-top: 5px;">Yu completed her MSc in Data Science at the University of Exeter, UK. Her research focused on developing a graph neural network (GNN)-based decision support system for the management of water distribution systems, and her research aimed to develop GNNs for modelling spatio-temporal dynamics of water distribution networks. Through this data-driven and deep-learning based approach, her work aimed to improve the reliability, efficiency, and sustainability of water systems by reducing water losses, energy utilization, and maintenance costs. 
-      </div>
-    </div>
-
-
-    <div class="col-md-12" style="margin-top: 50px">
-      <div class="student-card d-flex align-items-top">
-          <div class="student-image" style="margin-right: 15px;">
-              <img src="../img/Anjana.jpeg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-          </div>
-          <div class="student-details">
-              <div style="color: #003c3c;font-weight: bold;font-size: larger;">Anjana Shivananda</div>
-              <div>MSc Student (2025-2025)</div>
-              <div>Topic : <i>Machine Learning Modelling for the Prediction of Crop Yield Productivity</i></div>
-              <div>Supervisors : Jawad Fayaz and Paul Harris (Rothamsted Research)</div>
-          </div>
-      </div>
-      <div style="margin-top: 5px;">Anjana completed her MSc in Advanced Computer Science at the University of Exeter, UK. Her research, in collaboration with Rothamsted Research, focused on developing an AI-driven model to predict crop yield by integrating datasets on soil moisture, weather, management practices, and satellite data. The model aimed to improve yield forecasts and assess the impact of climate extremes on agricultural productivity. 
-      </div>
-    </div>
-
-
-    <div class="col-md-12" style="margin-top: 50px">
-      <div class="student-card d-flex align-items-top">
-          <div class="student-image" style="margin-right: 15px;">
-              <img src="../img/Zak.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-          </div>
-          <div class="student-details">
-              <div style="color: #003c3c;font-weight: bold;font-size: larger;">Zak French</div>
-              <div>MSc Student (2025-2025)</div>
-              <div>Topic : <i>Bayesian Machine Learning Framework for Forecasting Water Demands in Real-Time</i></div>
-              <div>Supervisor : Jawad Fayaz</div>
-          </div>
-      </div>
-      <div style="margin-top: 5px;">Zak completed his MSc in Data Science at the University of Exeter, UK. His research focused on developing a predictive model for water demand, comparing both temporal and spatial modelling approaches. By utilizing real-time data and historical patterns, he incorporated factors like seasonal variations whilst leveraging Bayesian statistics and machine learning techniques with the aim of enhancing forecasts of water flow demands to ultimately support better water resource management in communities. 
-      </div>
-    </div>
-
-
-    <div class="col-md-12" style="margin-top: 50px">
-      <div class="student-card d-flex align-items-top">
-          <div class="student-image" style="margin-right: 15px;">
-              <img src="../img/Ben.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-          </div>
-          <div class="student-details">
-              <div style="color: #003c3c;font-weight: bold;font-size: larger;">Ben Shaw</div>
-              <div>MSc Student (2025-2025)</div>
-              <div>Topic : <i>Deep Learning Framework for Real-Time Flow and Leakage Prediction in Water Distribution Networks</i></div>
-              <div>Supervisor : Jawad Fayaz</div>
-              <div>Currently : Data Scientist at TUI Group</div>  
-            </div>    
-      </div>
-      <div style="margin-top: 5px;">Ben completed his MSc in Data Science at the University of Exeter, UK. His research focused on developing deep learning architectures to model flow rates and predict leakages in UK water distribution networks. His work aimed to advance the development of more sustainable, autonomous water systems, reducing water loss and improving overall efficiency in distribution networks. 
-      </div>
-    </div>
-
-
-        <div class="col-md-12" style="margin-top: 50px">
-          <div class="student-card d-flex align-items-top">
-              <div class="student-image" style="margin-right: 15px;">
-                  <img src="../img/Ethan.jpeg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Yu.jpg" alt="Yu Weng" class="img" width="150" height="150">
               </div>
               <div class="student-details">
-                  <div style="color: #003c3c;font-weight: bold;font-size: larger;">Ethan Ray</div>
-                  <div>MSci Student (2024-2025)</div>
-                  <div>Topic : <i>Spatio-Vectorial Modelling of Earthquake Intensity Measures using Graph Neural Networks</i></div>
-                  <div>Supervisor : Jawad Fayaz</div>
-                  <div>Currently : Software Engineer at Leonardo Aeronautics</div>
+                <div class="team-name">Yu Weng</div>
+                <div>MSc in Data Science (2025 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Graph Neural Network-Based Decision Support System for Management of Water Distribution Systems</i></div>
               </div>
-          </div>
-          <div style="margin-top: 5px;">Ethan completed his MSci in Computer Science and Mathematics at the University of Exeter, UK. His research centered on using graph neural networks to model spatial variability of earthquake intensity measures, intending to advance emergency response, infrastructure resiliency, and risk mitigation. His research predicted the spatial distribution of the vector of intensity measures using the ground motions recorded through a network of sensors. His approach integrated spatial and temporal modelling of earthquake waves through advanced machine learning to support timely, data-informed decisions that can improve safety and reduce impacts in earthquake-prone areas
-          </div>
-      </div>
-  
-  
-      <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Angelo.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
             </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold;font-size: larger;">Angelo Palmer</div>
-                <div>MSci Student (2024-2025)</div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Anjana.jpeg" alt="Anjana Shivananda" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Anjana Shivananda</div>
+                <div>MSc in Advanced Computer Science (2025 - 2025)</div>
+                <div>Supervisors : Jawad Fayaz and Paul Harris (Rothamsted Research)</div>
+                <div>Topic : <i>Machine Learning Modelling for the Prediction of Crop Yield Productivity</i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Zak.jpg" alt="Zak French" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Zak French</div>
+                <div>MSc in Data Science (2025 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Bayesian Machine Learning Framework for Forecasting Water Demands in Real-Time</i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Ben.jpg" alt="Ben Shaw" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Ben Shaw</div>
+                <div>MSc in Data Science (2025 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Deep Learning Framework for Real-Time Flow and Leakage Prediction in Water Distribution Networks</i></div>
+                <div>Currently at : Data Scientist at TUI Group</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Ethan.jpeg" alt="Ethan Ray" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Ethan Ray</div>
+                <div>MSci in Computer Science and Mathematics (2024 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Spatio-Vectorial Modelling of Earthquake Intensity Measures using Graph Neural Networks</i></div>
+                <div>Currently at : Software Engineer at Leonardo Aeronautics</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Angelo.jpg" alt="Angelo Palmer" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Angelo Palmer</div>
+                <div>MSci in Computer Science (2024 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
                 <div>Topic : <i>Decision-Making System for Leakage Repair in Urban Water Networks using Deep Reinforcement Learning</i></div>
-                <div>Supervisor : Jawad Fayaz</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Angelo completed his MSci in Computer Science at the University of Exeter, UK. His research focused on developing a decision-making model for urban water network maintenance, aiming to reduce the economic and environmental impact of avoidable water loss. His interdisciplinary work involved analysing data from predictive models, utilising deep reinforcement learning techniques to train decision-making agents, and deploying said agents in a system that can be used by non-specialists in a commercial environment to enhance the management and maintenance of water networks.
-        </div>
-    </div>
+          </article>
 
-        <div class="col-md-12" style="margin-top: 50px">
-          <div class="student-card d-flex align-items-top">
-              <div class="student-image" style="margin-right: 15px;">
-                  <img src="../img/Martin.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Martin.jpg" alt="Martin Rapp" class="img" width="150" height="150">
               </div>
               <div class="student-details">
-                  <div style="color: #003c3c;font-weight: bold; font-size: larger;">Martin Rapp</div>
-                  <div>MSc Student (2024-2025)</div>
-                  <div>Topic : <i>Early Warning Systems for Leakage in Water Distribution Networks using Unified Temporal Fusion Transformers to Enable Real-Time Decision-Making</i></div>
-                  <div>Supervisor : Jawad Fayaz</div>
-                  <div>Currently : Data Management Analyst at UBS Group AG
+                <div class="team-name">Martin Rapp</div>
+                <div>MSc in Data Science (2024 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Early Warning Systems for Leakage in Water Distribution Networks using Unified Temporal Fusion Transformers to Enable Real-Time Decision-Making</i></div>
+                <div>Currently at : Data Management Analyst at UBS Group AG
                   </div>
               </div>
-          </div>
-          <div style="margin-top: 5px;">Martin completed his MSc in Data Science at the University of Exeter, UK. His research focused on time-series modelling and machine learning-based predictive modelling for water distribution management. His area of interest included the forecasting of water leakages and water flow demands, helping decision-makers to take preventative action. This work aligns with supporting water companies in meeting Ofwat and the UK government's future leakage reduction targets as well as leveraging new technologies to contribute to healthier management of water distribution.
-          </div>
-      </div>
-
-        <div class="col-md-12" style="margin-top: 50px">
-          <div class="student-card d-flex align-items-top">
-              <div class="student-image" style="margin-right: 15px;">
-                  <img src="../img/Jay.jpeg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-              </div>
-              <div class="student-details">
-                  <div style="color: #003c3c;font-weight: bold; font-size: larger;">Jay Howard</div>
-                  <div>MSc Student (2024-2025)</div>
-                  <div>Topic : <i>Deep Learning-Based Structural Health Monitoring of Offshore Wind Turbines using Functional Accelerometer Data</i></div>
-                  <div>Supervisor : Jawad Fayaz</div>
-                  <div>Currently : Lead Software Engineer (Vice President) at JPMorgan Chase</div>
-              </div>
-          </div>
-          <div style="margin-top: 5px;">Jay completed his MSc in Data Science at the University of Exeter, UK. His research centered on the structural health monitoring of offshore wind turbine blades through deep learning modelling. By leveraging convolutional, recurrent, and transformer neural networks, Jay developed advanced neural network architectures that enhance the reliability and efficiency of wind energy systems. His interdisciplinary work involved time-series analysis for real-time prediction and detection of damage to the turbines, ultimately contributing to the efficient management and maintenance of offshore wind turbines.
-          </div>
-      </div>
-
-        <div class="col-md-12" style="margin-top: 50px">
-          <div class="student-card d-flex align-items-top">
-              <div class="student-image" style="margin-right: 15px;">
-                  <img src="../img/Simon.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
-              </div>
-              <div class="student-details">
-                  <div style="color: #003c3c;font-weight: bold; font-size: larger;">Simon Tucker</div>
-                  <div>MSc Student (2024-2025)</div>
-                  <div>Topic : <i>Emulation of a Regional Climate Model over Southern Africa using Generative Machine Learning Models</i></div>
-                  <div>Supervisor : Jawad Fayaz</div>
-                  <div>Currently : Scientific Software Engineer (Regional Climate Change) at UK Met Office</div>
-              </div>
-          </div>
-          <div style="margin-top: 5px;">Simon completed his MSc in Data Science at the University of Exeter, UK. His research focused on applying machine learning to analyse and emulate regional climate model simulations. He utilized these climate models to deepen our understanding of how climate change could impact local and regional environments, helping to provide valuable insights into potential future conditions at finer spatial scales.
-          </div>
-      </div>
-
-
-      <div class="col-md-12" style="margin-top: 50px">
-        <div class="student-card d-flex align-items-top">
-            <div class="student-image" style="margin-right: 15px;">
-                <img src="../img/Jack.jpg" alt="Student Name" class="img" style="width: 150px; height: 150px;">
             </div>
-            <div class="student-details">
-                <div style="color: #003c3c;font-weight: bold; font-size: larger;">Jack Bowyer</div>
-                <div>MSc Student (2024-2025)</div>
-                <div>Topic : <i>Spatial Downscaling and Data Compression for Defence Applications using Deep-Learning Super-Resolution Modelling</i></div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Jay.jpeg" alt="Jay Howard" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Jay Howard</div>
+                <div>MSc in Data Science (2024 - 2025)</div>
                 <div>Supervisor : Jawad Fayaz</div>
-                <div>Currently : Scientific Software Engineer (Machine Learning) at UK Met Office</div>
+                <div>Topic : <i>Deep Learning-Based Structural Health Monitoring of Offshore Wind Turbines using Functional Accelerometer Data</i></div>
+                <div>Currently at : Lead Software Engineer (Vice President) at JPMorgan Chase</div>
+              </div>
             </div>
-        </div>
-        <div style="margin-top: 5px;">Jack completed his MSc in Data Science at the University of Exeter, UK. His research focused on the application of deep-learning approaches to the downscaling and compression of geospatial data which is of pertinence to the Met Office's defence customers. His current work involved contributing to the development of the Met Office's AI weather prediction model, FastNet.
-        </div>
+          </article>
 
-    </div>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Simon.jpg" alt="Simon Tucker" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Simon Tucker</div>
+                <div>MSc in Data Science (2024 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Emulation of a Regional Climate Model over Southern Africa using Generative Machine Learning Models</i></div>
+                <div>Currently at : Scientific Software Engineer (Regional Climate Change) at UK Met Office</div>
+              </div>
+            </div>
+          </article>
 
-      </section>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Jack.jpg" alt="Jack Bowyer" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Jack Bowyer</div>
+                <div>MSc in Data Science (2024 - 2025)</div>
+                <div>Supervisor : Jawad Fayaz</div>
+                <div>Topic : <i>Spatial Downscaling and Data Compression for Defence Applications using Deep-Learning Super-Resolution Modelling</i></div>
+                <div>Currently at : Scientific Software Engineer (Machine Learning) at UK Met Office</div>
+              </div>
+            </div>
+          </article>
+        </section>
 
-      </div>
+        <section class="team-section" aria-labelledby="visitors">
+          <h2 id="visitors">Visitors</h2>
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/free-user.png" alt="Photo placeholder for Ms. Melek Turkmen" class="img" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Ms. Melek Turkmen</div>
+                <div>PhD Student (Oct 2026 - Sep 2027)</div>
+                <div>Affiliation : Middle East Technical University, Turkiye</div>
+                <div>Topic : Generative Machine Learning for Earthquake Early Warning Systems<i></i></div>
+              </div>
+            </div>
+          </article>
 
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Francisco.jpeg" alt="Dr. Francisco Pinto" class="img team-photo-full" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Dr. Francisco Pinto</div>
+                <div>Assistant Professor (Oct 2024 - Jan 2025)</div>
+                <div>Affiliation : University of Chile, Chile</div>
+                <div>Topic : Machine Learning based Geotechnical Surrogate Models<i></i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-member">
+            <div class="student-card d-flex align-items-top">
+              <div class="student-image">
+                <img src="../img/Roberto.jpg" alt="Mr. Roberto Vergara" class="img team-photo-full" width="150" height="150">
+              </div>
+              <div class="student-details">
+                <div class="team-name">Mr. Roberto Vergara</div>
+                <div>Graduate Student (Apr 2024 - Jul 2024)</div>
+                <div>Affiliation : Universidad de Los Andes, Chile</div>
+                <div>Topic : Seismic Site Response Prediction based on Machine Learning Models<i></i></div>
+              </div>
+            </div>
+          </article>
+        </section>
     </div><!-- /.page-content -->
   </div><!-- /.page-body -->
 
