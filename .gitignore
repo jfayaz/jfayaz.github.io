@@ -1,1 +1,6 @@
-node_modules
+node_modules/
+.vs/
+.DS_Store
+._*
+Thumbs.db
+.picasa.ini

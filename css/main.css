@@ -174,9 +174,18 @@ img             { max-width: 100%; }
 }
 .hero-title {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
   margin: 0 0 0.25rem;
   font-weight: 400;
+}
+.hero-title a,
+.hero-title a:hover,
+.hero-title a:focus,
+.hero-title a:visited {
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 .hero-affil {
   font-size: 0.9rem;
@@ -671,6 +680,11 @@ img             { max-width: 100%; }
   font-weight: 600;
 }
 .page-content .resume-item .resume-content { display: block; }
+.page-content .projects .resume-content {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
 .page-content .resume-item .resume-image { float: left; margin: 0 1rem 0.5rem 0; }
 .page-content .resume-item .resume-image img { height: 50px; width: auto; }
 
@@ -784,13 +798,33 @@ img             { max-width: 100%; }
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s;
 }
-/* Default: team page cards start at top */
+/* Default: lab page cards start at top */
 .page-content .student-card { align-items: flex-start; }
 /* Experience items centred vertically via Bootstrap .align-items-center */
 .page-content .d-flex:not(.align-items-center) { align-items: flex-start; }
 .page-content .d-flex.align-items-center       { align-items: center !important; }
 .page-content .student-card:hover,
 .page-content .d-flex.resume-item:hover { box-shadow: var(--shadow-md); }
+
+@media (max-width: 600px) {
+  .page-content .student-card.align-items-center {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .page-content .student-card .resume-content {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .page-content .projects .resume-item {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .page-content .projects ul { padding-left: 1.25rem; }
+  .page-content .projects .resume-content > h5.mb-3 { font-size: 1.25rem !important; }
+}
 
 /* Image containers */
 .page-content .image-div,
