@@ -484,7 +484,7 @@ img             { max-width: 100%; }
 }
 .timeline-item {
   display: flex;
-  gap: 1.4rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -493,19 +493,19 @@ img             { max-width: 100%; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--teal-dark);
-  color: #fff;
+  background: var(--teal-pale);
+  color: var(--teal-dark);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
   z-index: 1;
-  border: 3px solid var(--bg-off);
-  box-shadow: 0 0 0 2px var(--teal-dark);
+  border: 1px solid var(--teal-border);
+  box-shadow: 0 0 0 4px var(--bg-white);
 }
-.timeline-body { padding-top: 0.2rem; }
+.timeline-body { min-width: 0; padding-top: 0.2rem; }
 .timeline-body h4 {
   font-size: 1rem;
   font-weight: 700;
@@ -516,14 +516,6 @@ img             { max-width: 100%; }
   font-size: 0.9rem;
   color: var(--text-mid);
   margin: 0;
-}
-.timeline-body .dates {
-  font-size: 0.78rem;
-  color: var(--teal-mid);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.35rem;
 }
 .timeline-body .inst {
   display: flex;
